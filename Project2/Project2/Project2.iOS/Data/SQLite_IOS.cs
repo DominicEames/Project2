@@ -18,7 +18,7 @@ namespace Project2.iOS.Data
         public SQLite_IOS() { }
         public SQLite.SQLiteConnection GetConnection()
         {
-            var fileName = "Testdb.db3";
+            var fileName = "LoggedIn.db3";
             var documentPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             var libraryPath = Path.Combine(documentPath, "..", "Library");
             var path = Path.Combine(libraryPath, fileName);

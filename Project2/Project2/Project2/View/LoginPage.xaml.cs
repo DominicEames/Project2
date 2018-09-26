@@ -44,7 +44,7 @@ namespace Project2.View
             Login user = new Login(Entry_Username.Text, Entry_Password.Text);
             if (user.CheckInformation())
             {
-                DisplayAlert("login", "Login Sucess", "OK");
+                await DisplayAlert("login", "Login Sucess", "OK");
                 if(Device.OS == TargetPlatform.Android)
                 {
                     Application.Current.MainPage = new NavigationPage(new MenuPage());
@@ -56,7 +56,7 @@ namespace Project2.View
             }
             else
             {
-                DisplayAlert("Login", "Login Not Correct, Empty", "OK");
+                await DisplayAlert("Login", "Login Not Correct, Empty", "OK");
             }
 
         }

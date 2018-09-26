@@ -24,8 +24,8 @@ namespace Project2.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            var url = new Uri(Intent.Data.ToString());
-            AuthenState.Authenticator.OnPageLoading(url);
+            var uri = new Uri(Intent.Data.ToString());
+            AuthenState.Authenticator.OnPageLoading(uri);
 
             Finish();
         }
